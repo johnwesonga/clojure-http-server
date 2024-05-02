@@ -18,7 +18,7 @@ FIXME: listing of options this app accepts.
 
 ## Running the docker image
 
-docker run -e DB_HOST=host.docker.internal -p 8000:8000 hello-http-server
+    $ docker run -e DB_HOST=host.docker.internal -p 8000:8000 hello-http-server
 
 ...
 
