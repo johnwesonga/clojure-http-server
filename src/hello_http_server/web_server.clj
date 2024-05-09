@@ -8,7 +8,7 @@
   component/Lifecycle
 
   (start [this]
-    (println "Starting http server on port" port)
+    (println "Starting http server on port:" port)
     (let [server (jetty/run-jetty  (router/app db) {:port port :join? false})]
       (assoc this :server server)))
   (stop [this]

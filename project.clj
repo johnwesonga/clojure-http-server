@@ -13,7 +13,9 @@
                  [org.postgresql/postgresql "42.1.4"]
                  [compojure "1.7.1"]
                  [de.ubercode.clostache/clostache "1.4.0"]
-                 [org.slf4j/slf4j-simple "2.0.13"]]
+                 [org.slf4j/slf4j-simple "2.0.13"]
+                 [selmer "1.12.59"]
+                 [metosin/ring-http-response "0.9.3"]]
   :plugins [[lein-ring "0.12.6"]]
   :ring {:handler hello-http-server.router/app-routes}
   :main ^:skip-aot hello-http-server.core

@@ -5,11 +5,12 @@
 </head>
 
 <body>
-
+    {{players}}
+    {% for player in players %}
+    <li>ID: {{player.players/id}} Name: {{player.players/name}} </li>
+    {% endfor %}
     <ul>
-        {{#players}}
-        <li>ID:{{id}} {{name}}</li>
-        {{/players}}
+
     </ul>
 </body>
 

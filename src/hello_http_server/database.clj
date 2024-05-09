@@ -32,11 +32,11 @@
 (defn new-database [host database]
   (map->Database {:host host :database database}))
 
-(defprotocol Players
+(defprotocol IDB
   (query [this sql-params]))
 
 (extend-type Database
-  Players
+  IDB
 ;; Query the database using SQL.
   (query [component sql-params]
     (let [conn (:connection component)]

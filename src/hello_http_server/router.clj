@@ -11,8 +11,8 @@
 (defn app-routes
   [app-component]
   (routes
-   (GET "/" request (handlers/indexHandler app-component request))
-   (GET "/players" request (handlers/playersHandler app-component request))
+   (GET "/" request (handlers/home app-component request))
+   (GET "/players" request (handlers/players app-component request))
    (route/not-found "<h1>Page not found</h1>")))
 
 (defn app
