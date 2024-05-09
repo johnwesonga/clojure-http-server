@@ -3,8 +3,7 @@
             [clostache.parser :as clostache]
             [hello-http-server.database :as db]
             [ring.util.response :as rr]
-            [selmer.parser :as parser]
-            [ring.util.http-response :refer [content-type ok]]))
+            [selmer.parser :as parser]))
 
 
 (def selmer-opts {:custom-resource-path (io/resource "public")})
